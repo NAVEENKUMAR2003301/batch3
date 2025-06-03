@@ -1,0 +1,140 @@
+*{
+}
+
+
+.one{
+    color: yellow;
+}
+.two{
+    background-color: aquamarine;
+}
+
+#one{
+   color: blueviolet;
+}
+#two{
+  color: chartreuse;
+}
+
+a{
+    color: black;
+}
+
+a[href]{
+    color: blueviolet;
+}
+
+
+
+/* .five{
+    color: aqua;
+} */
+
+/* #five{
+    color: yellow;
+} */
+
+
+
+.six{
+    color: blanchedalmond;
+}
+
+.seven{
+    color: aqua;
+}
+
+p{
+    color: aqua;
+    background-color: rgba(250, 235, 215, 0.189);
+    font-size: 1rem;
+    font-family: "ironman";
+}
+
+.child{
+    font-size: 16px;
+    font-weight: 900;
+    /* font-family: "Exile", system-ui; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+@font-face {
+    font-family:ironman;
+    src: url(./assets/fonts/Noto_Serif_Dives_Akuru/);
+}
+
+
+
+.hello{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    /* margin-top: 100px; */
+    /* margin-right: 20px; */
+    /* margin-left: 50px; */
+    /* margin-bottom: 100px; */
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 150PX;
+    border-top:20px solid blue ;
+    border-right:50px solid rgb(255, 0, 162) ;
+    border-left:20px solid rgb(221, 255, 0) ;
+    border-bottom:20px solid rgb(0, 255, 30) ;
+    padding-top: 50px;
+    padding-left: 120px;
+}
+
+.circle{
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    border-radius: 50%;
+    margin:top right bottom left;
+    /* margin:200px 0 0 200px; */
+    border: 2px solid red;
+}
+
+.hi{
+    width: 120px;
+    height: 120px;
+    background-color: blueviolet;
+    margin: topbottom rightleft;
+    margin: 300px 300px;
+    border: 10px solid black;
+}
+
+
+
+/* combine css selector  */
+
+
+h1,h3,h5{
+    font-size: 35px;
+    color: aqua;
+}
+
+
+/* .parent child  */
+
+.parent > .child1{
+    background-color: aquamarine;
+}
+
+.parent > .child2,.child3,.child4,.child5,.child6{
+    background-color: blue;
+}
+
+.parent2 >.child1{
+    font-size: 40px;
+}
+
+
+ul .banana{
+    font-size: 50px;
+    color: blueviolet;
+}
