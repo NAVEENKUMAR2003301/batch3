@@ -1,0 +1,116 @@
+/* *
+
+table{
+    border: 1px solid black;
+    
+}
+
+.box{
+    width: 100px;
+    height: 50px;
+    background-color: lightblue;
+    
+}
+
+.one,.two,.three,.four,.five,.six,.seven,.eight{
+    display: inline-block;
+    padding: 12px 0 0 27px;
+    color: white;
+    margin-top: 10px;
+}
+
+.nine{
+    float: left;
+    margin-right: 20px;
+}
+.ten{
+    float: right;
+    margin-left: 20px;
+}
+p{
+    text-align: justify;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .box{
+    width: 250px;
+    height: 50px;
+    
+}
+
+.one{
+    background-color: lightcoral;
+}
+.two{
+    background-color: lightgreen;
+}
+.three{
+    background-color: rgb(7, 183, 242);
+}
+
+.parent{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end; 
+    align-items: start;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+} */
+
+/* (start, center, end, space-between, space-around, space-evenly) */
+
+
+
+.flex-poster{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster{
+    width: 500px;
+    height: 700px;
+    border: 50px solid black;
+}
+.inner-poster{
+    width: 100%;
+    height: 100%;
+    border: 50px solid rgb(255, 255, 255);
+}
+.anime{
+    width: 100%;
+    height: 100%;
+    background: url(./assets/img/animeposter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.anime>span{
+    color: rgb(203, 6, 39);
+}
+
+@media(max-width:325px){
+    .anime{
+        width: 200px;
+    }
+    .inner-poster{
+        border: 10px solid white;
+    }
+}
