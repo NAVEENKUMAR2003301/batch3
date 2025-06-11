@@ -45,6 +45,118 @@ p{
     gap: 10px;
     grid-template-columns:1fr 2fr;
     grid-template-rows:3fr 5fr;
+    grid-auto-rows: 200px; 
+     
 }
 
+body{
+   
+}
 
+.grid-placement{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; 
+}
+.astronut{
+    background-color: rgb(152, 240, 128);
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+.robot{
+    background-color: rgb(240, 152, 128);
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+   
+}
+.apple{
+    background-color: rgb(240, 240, 128);
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.book{
+    background-color: aqua;
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 3;
+}
+.star{
+    background-color: black;
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: -1;
+    grid-column-end: -1;
+    
+}
+@media(max-width:769px){
+    .grid-placement{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px; 
+    }
+    .astronut{
+        grid-area: 1 / 1 /-3/ -2;
+    }
+    .robot{
+        grid-area: 1 / 2 / -3 / -1;
+    }
+    .apple{
+        grid-area: 2 / 1/ -2/-2;
+    }
+    .star{
+        grid-area: 2/2/-2/-1;
+    }
+    .book{
+        grid-area: 3/1/-1/-1;
+    }
+}
+
+@media(max-width:481px){
+    .grid-placement{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows:repeat(5, 1fr);
+        gap: 20px; 
+    }
+
+    .astronut{
+        grid-area: 1/1/-5/-1;
+        
+    }
+    .robot{
+        grid-area: 2/1/-4/-1;
+    }
+    .apple{
+        grid-area: 3/1/-3/-1;
+    }
+    .star{
+        grid-area: 4/1/-2/-1;
+    }
+    .book{
+        grid-area: 5/1/-1/-1;
+    }
+}
