@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    width: 60vw;
+    display: grid;
+    grid-template-columns:repeat(8,1fr);
+    grid-template-rows:repeat(8,1fr);
+}
+
+.white{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+}
+.black{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+}
