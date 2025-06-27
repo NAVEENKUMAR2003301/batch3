@@ -156,3 +156,16 @@ ul .banana{
     font-size: 50px;
     color: blueviolet;
 }
+
+*{
+    background-color: black;
+}
+
+#guessNumber{
+    background-color: aliceblue;
+    color: red;
+}
+
+button{
+    background-color: aliceblue;
+}
